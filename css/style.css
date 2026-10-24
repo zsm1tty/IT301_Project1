@@ -1,0 +1,361 @@
+/*global reset and box model setup*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*base body styling and first font family*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffefc4;
+    color: #086288;
+    line-height: 1.6;
+}
+
+/*heading font family to meet two font requirement*/
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    margin-bottom: 12px;
+    color: #086288;
+}
+
+/*header and navigation styling*/
+header {
+    background-color: #086288;
+    color: #ffefc4;
+    padding: 24px 20px;
+    text-align: center;
+    border-bottom: 5px solid #4d8dba;
+}
+
+header h1 {
+    color: #ffefc4;
+    margin-bottom: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #086288;
+    background-color: #97d7ff;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover, nav a.active {
+    background-color: #ffefc4;
+    color: #086288;
+}
+
+/*main container spacing so text never bleeds to edges*/
+main {
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+/*shared image styling*/
+.page-image {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border: 4px solid #086288;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    display: block;
+}
+
+/*external link styling*/
+.resource-links a {
+    color: #086288;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.resource-links a:hover {
+    color: #4d8dba;
+}
+
+/*positioning method 1 and 2: relative container and absolute badge*/
+.banner-box {
+    position: relative;
+    background-color: #97d7ff;
+    border: 2px solid #086288;
+    padding: 28px 24px 20px 24px;
+    border-radius: 6px;
+    margin-bottom: 28px;
+}
+
+.corner-tag {
+    position: absolute;
+    top: -12px;
+    right: 16px;
+    background-color: #086288;
+    color: #ffefc4;
+    padding: 4px 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/*positioning method 3: fixed back to top link*/
+.top-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #086288;
+    color: #ffefc4;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #97d7ff;
+    border-radius: 4px;
+}
+
+/*page 1 index homepage styles: directory grid and schedule bar*/
+.directory-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.directory-card {
+    background-color: #ffffff;
+    border: 2px solid #086288;
+    border-top: 8px solid #4d8dba;
+    border-radius: 6px;
+    padding: 20px;
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jump-btn {
+    display: inline-block;
+    background-color: #086288;
+    color: #ffefc4;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-top: 8px;
+}
+
+.jump-btn:hover {
+    background-color: #4d8dba;
+}
+
+/*page 2 push day styles: flexbox two column exercise cards*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.exercise-card {
+    background-color: #ffffff;
+    border: 2px solid #4d8dba;
+    border-radius: 6px;
+    padding: 20px;
+    flex: 1 1 45%;
+}
+
+/*page 3 pull day styles: structured workout table and focus boxes*/
+.workout-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.workout-table th, .workout-table td {
+    border: 2px solid #086288;
+    padding: 12px;
+    text-align: left;
+}
+
+.workout-table th {
+    background-color: #086288;
+    color: #ffefc4;
+}
+
+.pull-groups {
+    display: flex;
+    gap: 16px;
+}
+
+.group-box {
+    flex: 1;
+    background-color: #97d7ff;
+    padding: 18px;
+    border: 2px solid #086288;
+    border-radius: 6px;
+}
+
+/*page 4 legs day styles: stacked horizontal stripes*/
+.leg-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.leg-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-left: 8px solid #086288;
+    border-top: 1px solid #4d8dba;
+    border-right: 1px solid #4d8dba;
+    border-bottom: 1px solid #4d8dba;
+    padding: 16px 20px;
+    border-radius: 4px;
+}
+
+.abs-box {
+    background-color: #4d8dba;
+    color: #ffefc4;
+    padding: 24px;
+    border-radius: 6px;
+}
+
+.abs-box h2, .abs-box h3 {
+    color: #ffefc4;
+}
+
+/*page 5 nutrition and supplements styles: checklist, four pillars, and form*/
+.nutrition-list {
+    list-style-position: inside;
+    background-color: #ffffff;
+    border: 2px solid #086288;
+    padding: 24px;
+    border-radius: 6px;
+}
+
+.nutrition-list li {
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #97d7ff;
+}
+
+.supp-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.supp-box {
+    flex: 1 1 200px;
+    background-color: #ffffff;
+    border-top: 6px solid #086288;
+    border-left: 2px solid #4d8dba;
+    border-right: 2px solid #4d8dba;
+    border-bottom: 2px solid #4d8dba;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.timing-label {
+    display: inline-block;
+    background-color: #97d7ff;
+    color: #086288;
+    padding: 4px 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.feedback-form {
+    background-color: #97d7ff;
+    border: 2px solid #086288;
+    padding: 24px;
+    border-radius: 6px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #086288;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit-btn {
+    background-color: #086288;
+    color: #ffefc4;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #4d8dba;
+}
+
+/*footer styling*/
+footer {
+    background-color: #086288;
+    color: #ffefc4;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/*media query for small screens*/
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .directory-grid, .card-container, .pull-groups, .supp-container {
+        flex-direction: column;
+    }
+
+    .leg-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}

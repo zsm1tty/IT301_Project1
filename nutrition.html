@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--page metadata and stylesheet link-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fitness Guide - Nutrition &amp; Supplements</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+    <!--site header and navigation bar-->
+    <header>
+        <h1>Practical PPL Fitness Guide</h1>
+        <p>Daily macros, fiber, hydration, sleep, and supplementation</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="push.html">Push Day</a></li>
+                <li><a href="pull.html">Pull Day</a></li>
+                <li><a href="legs.html">Leg Day</a></li>
+                <li><a href="nutrition.html" class="active">Nutrition &amp; Supplements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--main content area for nutrition and supplements-->
+    <main>
+        <section class="banner-box">
+            <span class="corner-tag">Daily Fuel</span>
+            <h2>Nutrition, Recovery &amp; Supplements</h2>
+            <p>Training breaks muscle down, while adequate rest, nutrition, and sleep build it back up. Focusing on daily macro targets, fiber, hydration, and consistent sleep covers what matters most, while a simple supplement routine fills in the gaps.</p>
+        </section>
+
+        <!--nutrition and supplements image-->
+        <img src="images/nutrition.jpg" alt="Healthy chicken and rice meal" class="page-image">
+
+        <!--core nutrition principles list-->
+        <section>
+            <h2>Six Core Nutrition &amp; Recovery Priorities</h2>
+            <ul class="nutrition-list">
+                <li><strong>Adequate Daily Protein:</strong> Protein is essential for repairing and building muscle tissue after lifting. Aiming for roughly 0.8 to 1 gram of protein per pound of body weight spread across meals works well.</li>
+                <li><strong>Sufficient Carbohydrates:</strong> Carbs are your body's primary fuel source for intense workouts. Eating enough carbs keeps gym performance high and replenishes muscle glycogen.</li>
+                <li><strong>Moderate Dietary Fat:</strong> Healthy fats are needed for hormone production and vitamin absorption, but keeping fat intake moderate prevents calories from getting too high and leaves room for protein and carbs.</li>
+                <li><strong>Enough Daily Fiber:</strong> Tracking fiber is just as important as tracking macros. Getting around 25 to 38 grams of fiber per day supports digestion, gut health, and fullness.</li>
+                <li><strong>Consistent Hydration:</strong> Drinking plenty of water throughout the day keeps strength levels up, helps nutrient transport, and prevents cramping during workouts.</li>
+                <li><strong>Quality Sleep:</strong> Aim for 7 to 9 hours of sleep per night. Sleep is when growth hormone release peaks and your central nervous system recovers from heavy training.</li>
+            </ul>
+        </section>
+
+        <!--four pillar supplement breakdown-->
+        <section>
+            <h2>My Daily Supplement Stack</h2>
+            <p>Supplements do not replace hard training or a solid diet. I stick to four basics that support strength, general health, and sleep quality:</p>
+            <div class="supp-container">
+                <article class="supp-box">
+                    <span class="timing-label">5g Daily</span>
+                    <h3>Creatine Monohydrate</h3>
+                    <p>Supports strength and muscle recovery by helping replenish ATP during heavy sets and drawing water into muscle cells.</p>
+                </article>
+
+                <article class="supp-box">
+                    <span class="timing-label">With a Fatty Meal</span>
+                    <h3>Omega-3 Fish Oil (EPA + DHA)</h3>
+                    <p>Supports heart, brain, and joint health. Look at the combined EPA and DHA content on the label rather than just total fish oil milligrams.</p>
+                </article>
+
+                <article class="supp-box">
+                    <span class="timing-label">Morning / With Food</span>
+                    <h3>General Multivitamin</h3>
+                    <p>Acts as nutritional insurance to cover any small micronutrient gaps in daily food intake.</p>
+                </article>
+
+                <article class="supp-box">
+                    <span class="timing-label">Before Bed</span>
+                    <h3>Magnesium Glycinate</h3>
+                    <p>Taken at night to support muscle relaxation, nervous system recovery, and deeper sleep while being easy on the stomach. Ensure you get magnesium glycinate, and not other forms like magnesium oxide as humans absorb this type better.</p>
+                </article>
+            </div>
+        </section>
+
+        <!--external resource link-->
+        <section class="resource-links">
+            <h2>Nutrition Lookup Tool</h2>
+            <p>To check accurate macro and fiber numbers for whole foods, visit <a href="https://fdc.nal.usda.gov/">USDA FoodData Central</a>.</p>
+        </section>
+
+        <!--html form with built in validation-->
+        <section>
+            <h2>Share Your Routine or Ask a Question</h2>
+            <form action="#" method="get" class="feedback-form">
+                <div class="form-group">
+                    <label for="user-name">Your Name (Required):</label>
+                    <input type="text" id="user-name" name="user-name" required placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="user-email">Your Email (Required):</label>
+                    <input type="email" id="user-email" name="user-email" required placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="protein-goal">Daily Protein Goal in Grams (Required):</label>
+                    <input type="number" id="protein-goal" name="protein-goal" min="50" max="400" required placeholder="160">
+                </div>
+
+                <div class="form-group">
+                    <label for="fav-day">Favorite Training Day:</label>
+                    <select id="fav-day" name="fav-day">
+                        <option value="push">Push Day</option>
+                        <option value="pull">Pull Day</option>
+                        <option value="legs">Leg Day</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-message">Question or Routine Notes (Required):</label>
+                    <textarea id="user-message" name="user-message" rows="4" required placeholder="Type your question or thoughts here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Form</button>
+                <p><small>(doesn't actually send anything)</small></p>
+            </form>
+        </section>
+    </main>
+
+    <!--fixed position button-->
+    <a href="#top" class="top-link">Top</a>
+
+    <!--site footer-->
+    <footer>
+        <p>Created for IT 301 Web Project | Personal PPL &amp; Nutrition Guide</p>
+    </footer>
+</body>
+</html>
